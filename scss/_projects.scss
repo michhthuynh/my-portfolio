@@ -1,0 +1,85 @@
+@import "./mixins";
+@import "./variables";
+
+.project {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 100px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 2px;
+      background-color: $primary;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 10px;
+      background-color: $primary;
+      position: absolute;
+      bottom: -23px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+
+    &__item {
+      @include center;
+      justify-content: start;
+      flex-direction: column;
+      @include gradient;
+      padding: 20px;
+      border-radius: 10px;
+      &--title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        &:hover {
+          animation: shake 500ms ease-in-out forwards;
+        }
+        a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+      &--thumbnail {
+        @include center;
+        border-radius: 10px;
+        background-color: $white;
+        margin-bottom: 20px;
+        img {
+          width: 75%;
+        }
+      }
+      &--description {
+        color: $white;
+      }
+    }
+    @include medium {
+      grid-template-columns: 1fr;
+      &__item {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

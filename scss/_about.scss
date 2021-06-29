@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./variables";
+
+.about {
+  @include gradient;
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+  }
+  &__avatar {
+    @include center;
+    border-radius: 50%;
+    width: 200px;
+    overflow: hidden;
+    margin: 30px auto;
+  }
+  &__description {
+    color: $gray-300;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    font-style: italic;
+    font-size: 1rem;
+  }
+}

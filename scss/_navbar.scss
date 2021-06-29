@@ -1,0 +1,63 @@
+@import "./mixins";
+@import "./constants";
+
+.navbar {
+  @include align-item();
+  justify-content: space-between;
+  @include gradient();
+  color: $white;
+  max-height: $nav-height;
+  position: relative;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+
+  &__logo {
+    display: block;
+    height: $nav-height;
+    img {
+      height: $nav-height;
+    }
+  }
+
+  &__bars {
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: block;
+    position: relative;
+
+    @include tablet {
+      display: none;
+    }
+    &--links {
+      display: inline-block;
+      &:first-child {
+        margin-top: 30px;
+      }
+      margin-left: 30px;
+      text-decoration: none;
+      color: $white;
+      margin-bottom: 30px;
+      &:hover {
+        color: black;
+        animation: shake 500ms ease-in-out forwards;
+      }
+    }
+  }
+
+  .expanded {
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    @include gradient();
+    @include align-item;
+    flex-direction: column;
+    width: 100%;
+  }
+}

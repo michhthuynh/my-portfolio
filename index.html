@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+
+  <title>I'm Huynh</title>
+</head>
+
+<body>
+  <nav class="navbar container">
+    <a href="/" class="navbar__logo"><img src="./images/logo.png" alt="logo"></a>
+    <div class="navbar__bars" id="navbar__bars"><i class="fas fa-bars" onclick="handleClickOpen()"></i></div>
+    <div class=" navbar__menu" id="navbar__menu">
+      <a href="" class="navbar__menu--links">About me</a>
+      <a href="" class="navbar__menu--links">Projects</a>
+      <a href="" class="navbar__menu--links">Repositories</a>
+      <a href="" class="navbar__menu--links">Contact</a>
+    </div>
+  </nav>
+  <section class="intro container">
+    <div class="intro__left">
+      <div class="intro__left--title">
+        <span>Hey!, I'm</span>
+        <span>Huynh Hoang</span>
+      </div>
+      <div class="intro__left--detail">
+        This is the my portfolio. I'm a Frontend Developer and Devops engineer
+      </div>
+      <a class="intro__left--contact" href="#contact">Contact me</a>
+    </div>
+    <div class="intro__right">
+      <img src="./images/intro-section.png" alt="intro">
+    </div>
+  </section>
+  <div class='break-line'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <section class="project container">
+    <div class="project__title">
+      My projects
+    </div>
+    <div class="project__list">
+      <div class="project__list__item">
+        <div class="project__list__item--title">
+          <a href="#">TODO App</a>
+        </div>
+        <div class="project__list__item--thumbnail">
+          <img src="./images/todo-thumbnail.png" alt="thumbnail">
+        </div>
+        <div class="project__list__item--description">
+          ToDo App is simple and awesome app to organize your tasks with very easy to use interface. ToDo can help you
+          to make list of your tasks and also you can set Reminder with specific tasks. It reminds you at you specified
+          Time.
+        </div>
+      </div>
+      <div class="project__list__item">
+        <div class="project__list__item--title">
+          <a href="#">Social App</a>
+        </div>
+        <div class="project__list__item--thumbnail">
+          <img src="./images/social-thumbnail.png" alt="thumbnail">
+        </div>
+        <div class="project__list__item--description">
+          Would you like to share anything with your friend? Let me help you!
+        </div>
+      </div>
+      <div class="project__list__item">
+        <div class="project__list__item--title">
+          <a href="#">Cinema App</a>
+        </div>
+        <div class="project__list__item--thumbnail">
+          <img src="./images/movie-thumbnail.png" alt="thumbnail">
+        </div>
+        <div class="project__list__item--description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quas dolores, alias enim, odio corporis
+          quam earum quaerat debitis suscipit minima quia? Aliquid illum tempora explicabo nihil ratione vel dolorem.
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class='break-line-2'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+  <section id='about' class="about container">
+    <div class="about__title">
+      About me
+    </div>
+    <div class="about__avatar">
+      <img src="./images/avatar.jpg" alt="avatar">
+    </div>
+    <div class="about__description">
+      "My name is Huynh Hoang, I have a Bachelor of Communication of Technology from the Ho Chi Minh City University of
+      Technology. I am good at Javascript, ReactJs Framework,... related to Front end development. Besides, I have about
+      2 years of experience in maintaining the Jenkins CI pipeline and design the automation testing framework."
+    </div>
+  </section>
+  <section class="contact container" id="container">
+    <div class="contact__title">
+      Contact me
+    </div>
+    <div class="contact__list">
+      <div class="contact__list__item">
+        <span><i class="fas fa-phone-volume"></i></span>
+        <div>
+          <div class="contact__list__item--info">0981867452</div>
+          <div class="contact__list__item--time">Mon-Fri 7am-6pm</div>
+        </div>
+      </div>
+      <div class="contact__list__item">
+        <span><i class="fas fa-envelope"></i></span>
+        <div>
+          <div class="contact__list__item--info">huynhhoang.st.97@gmail.com</div>
+          <div class="contact__list__item--time">Online support</div>
+        </div>
+      </div>
+      <div class="contact__list__item">
+        <span><i class="fab fa-skype"></i></span>
+        <div>
+          <div class="contact__list__item--info">Huynh Hoang</div>
+          <div class="contact__list__item--time">Mon-Fri 7am-6pm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

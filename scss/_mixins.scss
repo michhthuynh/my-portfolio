@@ -1,0 +1,47 @@
+@mixin gradient {
+  background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+@mixin align-item {
+  display: flex;
+  align-items: center;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin medium {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

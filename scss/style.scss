@@ -1,0 +1,34 @@
+@import "./variables";
+@import "./navbar";
+@import "./intro_section";
+@import "./projects";
+@import "./mixins";
+@import "./about";
+@import "./contact";
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 15vw;
+  @include mobile {
+    padding: 0 10px;
+  }
+}
+
+.break-line {
+  display: flex;
+  @include gradient;
+  border-bottom: 2px solid #efcbf3;
+}
+
+.break-line-2 {
+  display: flex;
+  @include gradient;
+}
